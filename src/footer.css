@@ -1,0 +1,94 @@
+.footer {
+    width: 70%; /* Set the footer width to 70% */
+    margin: 0 auto; /* Center the footer horizontally */
+    padding: 20px 0; /* Adjust vertical padding */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute space evenly */
+    align-items: center; /* Center content vertically */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow equally */
+    max-width: 300px; /* Set a maximum width for the sections */
+    text-align: left; /* Align text to the left */
+    padding: 0 10px; /* Add horizontal padding for spacing */
+}
+
+.footer-section h3 {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-section p {
+    color: var(--fontcolorL);
+    font-family: "Comfortaa", sans-serif;
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 4px;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center; /* Center icons */
+    gap: 10px; /* Space between icons */
+    padding-left: 10px; /* Align icons with sections */
+}
+
+.footer-icons .icon img {
+    width: 50px; /* Size of the icons */
+    height: 50px; /* Size of the icons */
+    transition: transform 0.2s;
+    border-radius: 50%; /* Make icons circular */
+}
+
+.footer-icons .icon img:hover {
+    border: 1px solid #bb86fc; /* Hover effect */
+    transform: scale(1.2); /* Scale effect on hover */
+}
+
+/* Material symbols */
+.material-symbols-outlined {
+    font-size: 30px; /* Set default font size */
+}
+
+/* Media query for responsive adjustments */
+@media screen and (max-width: 600px) {
+
+
+    .footer {
+        width: 70%; /* Set the footer width to 70% */
+        padding: 10px 0; /* Adjust padding for small screens */
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between; /* Distribute space evenly */
+        align-items: center; /* Center content vertically */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+    .footer-section {
+        max-width: 100%; /* Allow full width on smaller screens */
+    }
+
+    .footer-icons .icon img {
+        margin: 10px 0px;
+        width: 40px; /* Smaller icon size */
+        height: 40px; /* Smaller icon size */
+    }
+
+    .footer-section h3 {
+        font-weight: 600;
+        font-size: 15px; /* Adjusted font size for smaller screens */
+    }
+    
+    .footer-section p {
+        font-size: 12px; 
+    }
+}

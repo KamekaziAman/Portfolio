@@ -1,0 +1,54 @@
+.container {
+    --d: 15s; 
+  
+    display: grid;
+    grid-template-columns: repeat(3, 300px); 
+    overflow: hidden;
+    width: 60%; 
+    margin: 0 auto; 
+    gap: 15px; 
+}
+
+.container > div {
+
+    grid-area: 1 / 1;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    animation: r var(--d) linear infinite;
+}
+
+.container > div img {
+    width: 80%; 
+    height: auto; 
+}
+
+
+@keyframes r {
+    0% { transform: translate(0); }
+    20% { transform: translate(-100%); }
+    20.01% { transform: translate(400%); }
+}
+
+/* Animation delays for each child */
+.container > div:nth-child(2) { animation-delay: calc((1 - 2) / 5 * var(--d)); }
+.container > div:nth-child(3) { animation-delay: calc((1 - 3) / 5 * var(--d)); }
+.container > div:nth-child(4) { animation-delay: calc((1 - 4) / 5 * var(--d)); }
+.container > div:nth-child(5) { animation-delay: calc((1 - 5) / 5 * var(--d)); }
+
+@media screen and (max-width: 900px) {
+    .container {
+        --d: 15s; /* duration */
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        overflow: hidden;
+        width: 90%; /* Change the width of the banner to 60% */
+        margin: 0 auto; /* Center the container */
+        gap: 0px; /* Adjust the gap between the items */
+    }
+
+    .container > div img {
+        width: 90%; /* Ensure images take full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}

@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+/* Project Container */
+.projectContainer {
+    width: 64%;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+/* Experiment Title */
+.experiment {
+    letter-spacing: 1px;
+    font-size: 2.4rem;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 4px;
+    color: var(--fontcolorL);
+}
+
+/* Tabs for Projects and Videos */
+.pv {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.pv li {
+    list-style: none;
+    font-style: italic;
+}
+
+.pv li a {
+    cursor: none;
+    text-decoration: none;
+    color: var(--fontcolorL);
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+/* Underline effect for active tab */
+.pv li a:hover,
+.pv li a:focus {
+    border-bottom: 2px solid #bb86fc;
+    padding-bottom: 2px;
+}
+
+/* Project container style */
+.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 18px;
+    margin-bottom: 1px;
+    color: var(--fontcolorL);
+    font-size: 1.6rem;
+    /* border-bottom: 0.2px solid var(--fontcolorL); */
+    border-top: 0.2px solid var(--fontcolorL);
+}
+
+/* Style for the project name */
+.projectname {
+    font-family: "Bowlby One", sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: normal;
+    color: var(--fontcolorL);
+}
+
+.projectnumber {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: var(--fontcolorL);
+}
+
+/* Hover effect */
+.project:hover .projectname {
+    color: #bb86fc;
+}
+
+.project:hover .projectnumber {
+    color: #bb86fc;
+}
+
+
+
+/* hover video */
+
+
+.video-div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 300px;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-50%) scale(0.8); /* Start with a slight scale-down */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    z-index: 20;
+    /* Ensure video div is on top */
+}
+
+.video-div {
+    position: absolute;
+    z-index: 100;
+    pointer-events: none;
+    display: none;
+    transition: transform 0.2s ease;
+    transform: translateY(-50%) scale(1);   
+  }
+  
+  .video-div.active {
+    display: block;
+  }
+  
+  #hover-video {
+    width: 400px;
+    height: 300px;
+  }
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+/* Cursor-follow effect */
+.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-50%) scale(1); 
+}
+
+
+@media screen and (max-width: 900px) {
+    .projectContainer {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        font-size: 1.5rem;
+    }
+
+    .project {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 2px;
+        color: var(--fontcolorL);
+        font-size: 1rem;
+        /* border-bottom: 0.2px solid var(--fontcolorL); */
+        border-top: 0.2px solid var(--fontcolorL);
+    }
+
+    .video-div {
+        position: absolute;
+        top: -100px;
+        left: -360px;
+        width: 200px;
+        height: 100px;
+        background-color: #000;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+        z-index: 0;
+        /* Ensure video div is on top */
+    }
+    
+    .video-div {
+        position: absolute;
+        z-index: 0;
+        pointer-events: none;
+        display: none;
+      }
+      
+      .video-div.active {
+        display: block;
+      }
+      
+      #hover-video {
+        width: 200px;
+        height: 100px;
+      }
+    
+    video {
+        width: 10%;
+        height: 10%;
+    }
+    
+    /* Cursor-follow effect */
+    .active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(-50%) scale(1); 
+    }
+
+   
+
+}
+
+body {
+    overflow-x: hidden;
+  }

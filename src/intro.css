@@ -1,0 +1,80 @@
+.intro {
+    margin: 90px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pfp img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1.5px solid var(--fontcolorL);
+}
+
+.name{
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid var(--fontcolorL);
+    color: var(--fontcolorL);
+
+
+}
+
+.dec {
+    margin: 20px 0px;
+    line-height: 46px;
+    text-align: center;
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 2em;
+    font-style: normal;
+    color: var(--basecolor);
+    white-space: pre;
+}
+
+.dec span{
+    background-color: var(--hoverfontcolor);
+}
+
+.introbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    height: 50px;
+    background-color: var(--boxcolor);
+    border: 1.2px solid var(--fontcolorL);
+    padding-left: 2px;
+    
+}
+
+.introbutton a{
+    font-family: "Lato", sans-serif;
+    font-weight: 1000;
+    font-style:normal;
+    font-size: 16px;
+    color: var(--fontcolorL);
+    cursor: none;
+    text-decoration:none;
+}
+
+@media screen and (max-width: 900px) {
+    .dec {
+        margin: 10px 0px;
+        line-height: 34px;
+        text-align: center;
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 100;
+        font-size: 1.3em;
+        font-style: normal;
+        color: var(--basecolor);
+    }
+}
