@@ -23,22 +23,22 @@ function App() {
   // Project and video data
   const projectsData = {
     projects: [
-      { name: 'Music Site', video: '/animix.mp4' },
+      { name: 'Music Site', video: 'animix.mp4' },
       { name: 'Portfolio', video: 'portfolio.mp4' },
-      { name: 'Jarvis - AI', video: '/jarvis.mp4' },
-      { name: 'BMI Site', video: '/bmi.mp4' },
-      { name: 'Tic Tac Toe', video: '/ttt.mp4' },
-      { name: 'Netflix Clone', video: '/netflix.mp4' },
-      { name: 'Weather Site', video: '/wheather.mp4' },
-      { name: 'Farmer App', video: '/farmerapp.mp4' },
+      { name: 'Jarvis - AI', video: 'jarvis.mp4' },
+      { name: 'BMI Site', video: 'bmi.mp4' },
+      { name: 'Tic Tac Toe', video: 'ttt.mp4' },
+      { name: 'Netflix Clone', video: 'netflix.mp4' },
+      { name: 'Weather Site', video: 'wheather.mp4' },
+      { name: 'Farmer App', video: 'farmerapp.mp4' },
     ],
     videos: [
-      { name: 'Hostel edit', video: '/hostel.mp4' },
-      { name: 'Cricket', video: '/cricket.mp4' },
-      { name: 'Bike', video: '/bike.mp4' },
-      { name: 'Minecraft Parkour', video: '/minecraft.mp4' },
-      { name: 'Redfort edit', video: '/redfort.mp4' },
-      { name: 'Friend league', video: '/fl.mp4' },
+      { name: 'Hostel edit', video: 'hostel.mp4' },
+      { name: 'Cricket', video: 'cricket.mp4' },
+      { name: 'Bike', video: 'bike.mp4' },
+      { name: 'Minecraft Parkour', video: 'minecraft.mp4' },
+      { name: 'Redfort edit', video: 'redfort.mp4' },
+      { name: 'Friend league', video: 'fl.mp4' },
     ],
   };
 
@@ -175,11 +175,11 @@ function App() {
 
   // Paths for light and dark mode images
   const images = {
-    gdsc: darkMode ? "/gdscdark.png" : "/gdsc.png",
-    sih: darkMode ? "/sihdark.png" : "/sih.png",
-    graavitate: darkMode ? "/graavitate LOGOdark.png" : "/GRAAVITATE LOGO.png",
-    wot2: darkMode ? "/wot2 1dark.png" : "/wot2 1.png",
-    gbuframe: darkMode ? "/gbuframedark.png" : "/gbuframe.png",
+    gdsc: darkMode ? "gdscdark.png" : "gdsc.png",
+    sih: darkMode ? "sihdark.png" : "sih.png",
+    graavitate: darkMode ? "graavitate LOGOdark.png" : "GRAAVITATE LOGO.png",
+    wot2: darkMode ? "wot2 1dark.png" : "wot2 1.png",
+    gbuframe: darkMode ? "gbuframedark.png" : "gbuframe.png",
   };
 
   return (
@@ -210,7 +210,7 @@ function App() {
       {/* intro */}
       <div className="intro">
         <div className="pfp">
-          <img src="/pfp.jpg" alt="Profile" />
+          <img src="pfp.jpg" alt="Profile" />
         </div>
         <div className="name">Hi, I'm Aman</div>
         <div className="dec">
@@ -319,11 +319,11 @@ function App() {
               <p>Gaur City Noida</p>
             </div>
             <div className="footer-icons">
-              <a href="https://github.com/KamekaziAman" target="_blank"  className="icon"><img src="/g.png" alt="github" /></a>
-              <a href="https://www.instagram.com/aman_k.kazi/" target="_blank" className="icon"><img src="/instagram.png" alt="Instagram" /></a>
-              <a href="https://pin.it/18QCWkURE"  target="_blank"  className="icon"><img src="/pin.png" alt="Pintrest" /></a>
-              <a href="https://x.com/Kamekazi1341439" target="_blank"  className="icon"><img src="/twi.png" alt="Twitter" /></a>
-              <a href="https://www.linkedin.com/in/aman-rai-b11048296" target="_blank"  className="icon"><img src="/link.png" alt="LinkedIn" /></a>
+              <a href="https://github.com/KamekaziAman" target="_blank"  className="icon"><img src="g.png" alt="github" /></a>
+              <a href="https://www.instagram.com/aman_k.kazi/" target="_blank" className="icon"><img src="instagram.png" alt="Instagram" /></a>
+              <a href="https://pin.it/18QCWkURE"  target="_blank"  className="icon"><img src="pin.png" alt="Pintrest" /></a>
+              <a href="https://x.com/Kamekazi1341439" target="_blank"  className="icon"><img src="twi.png" alt="Twitter" /></a>
+              <a href="https://www.linkedin.com/in/aman-rai-b11048296" target="_blank"  className="icon"><img src="link.png" alt="LinkedIn" /></a>
             </div>
           </div>
         </footer>
